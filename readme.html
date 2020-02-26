@@ -5,23 +5,43 @@
 </p>
 <p>Microsoft Excel files containing code in Visual Basic for Application (VBA) for simulating synaptic size fluctuations and distributions as a Kesten Process or a corresponding non-linear Langevin process as explained in the aforementioned paper.
 </p>
-<p>Four files are provided
-</p><p>Kesten and Langevin Simulator Fig 5 control.xlsm
-</p><p>Kesten and Langevin Simulator Fig 5 silenced.xlsm
-</p>
-<p>Kesten and Langevin Simulator Fig 6 control.xlsm
-</p><p>Kesten and Langevin Simulator Fig 6 silenced.xlsm The VBA code in each pair of files is identical.
-</p><p>Within each pair, the files differ in the parameters used for the simulation (obtained from control or silenced networks) In the first pair, &eta; is set to 1-&epsilon;.
+<p>Four files are provided<ul>
+<li/>Kesten and Langevin Simulator Fig 5 control.xlsm
+<li/>Kesten and Langevin Simulator Fig 5 silenced.xlsm
+<li/>Kesten and Langevin Simulator Fig 6 control.xlsm
+<li/>Kesten and Langevin Simulator Fig 6 silenced.xlsm
+  </ul>
+    <p/>The VBA code in each pair of files is identical.
+</p><p>Within each pair, the files differ in the parameters used for the simulation (obtained from control or silenced networks)
+    <br/>In the first pair, &eta; is set to 1-&epsilon;.
 </p>
 <p>In the second pair, &eta; and &epsilon; are the values derived from the fits in Fig 6 A and B
 </p>
 <p>All simulations are seeded with the experimentally obtained data for control and silenced networks (1922 and 2032 synapses, respectively)
 </p>
 <p>The simulations in the first pair are set to run for 320 simulation steps, and in the second pair for 40 simulation steps. Apart from this, the VBA code in all files is identical.
-</p><p><img src="./guide.png" alt="guide" width="800">
+</p><p><img src="./images/guide.png" alt="guide" width="800">
 </p>
-<p>Important Notes:
-</p><p>The simulations take 1-2 minutes to run - during which the spreadsheet will be unresponsive.
-</p><p>To run the simulations, Macros must be enabled (File-&gt;Options-&gt;Trust Center-&gt;Trust Center Settings-&gt;Macro Settings-&gt;Enable All Macros
+<p>Important Notes:<ol>
+<li/>The simulations take 1-2 minutes to run - during which the spreadsheet will be unresponsive.
+<li/>To run the simulations, Macros must be enabled (File-&gt;Options-&gt;Trust Center-&gt;Trust Center Settings-&gt;Macro Settings-&gt;Enable All Macros
+<br/>
+When a file is opened for the first time, Excel might present you with "Enable Editing" and then "Enable Content"
+buttons. Please enable by clicking the appropriate buttons.
+<li/> The VBA code uses the Microsoft Excel Analysis Toolpack - it is a standard Microsoft Excel Add-In (not a 3rd party one)
+but it is not enabled by default.
+To enable it, open a new Excel file and then go to<br/>
+File-&gt;Options-&gt;Add-Ins
+<br/>
+At the bottom of the window, where the title is "Manage:", select "Excel Add-ins" and press the "Go..." button on the
+right.
+In the window that opens, select "Analysis ToolPak" and "Analysis ToolPak - VBA" as in the picture below.
 </p>
+<img src="./images/add-ins.png" alt="add-ins dialog box">
+<br/>Press OK.<br/>
+If needed, additional info on installing the Add-Ins can be found here
+<a href=https://support.office.com/en-us/article/load-the-analysis-toolpak-in-excel-6a63e598-cd6d-42e3-9317-6b40ba1a66b4">https://support.office.com/en-us/article/load-the-analysis-toolpak-in-excel-6a63e598-cd6d-42e3-9317-6b40ba1a66b4</a>
+<p/>
+Here is an example spreadsheet (... Fig 6 control.xsm) loaded in excel:<p/>
+<img src="./images/screenshot.png" alt="screenshot" width="900">
 </html>
